@@ -440,6 +440,7 @@ func evalHashIndexExpression(hash, index object.Object) object.Object {
 	}
 
 	pair, ok := hashObject.Pairs[key.HashKey()]
+
 	if !ok {
 		return NULL
 	}
